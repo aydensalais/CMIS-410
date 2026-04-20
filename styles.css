@@ -16,15 +16,15 @@
 
 body {
     font-size: 1.1em;
-    font-family: Arial, Helvetica, sans-serif;
-	background-color: white;
+    font-family: Roboto, Roboto, Roboto;
+	background-color: darkblue;
 }
 
 #container {
     width: 930px;
     border-width: 1px;
     margin: 0 auto;
-    background-color: white;
+    background-color: tan;
 }
 
 
@@ -95,7 +95,7 @@ aside {
 }
 
 aside p {
-    font-style: italic;
+    font-style: roboto;
     font-size: 0.9em;
 }
 
@@ -143,4 +143,8 @@ footer a:visited {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.formRow {
+  margin-bottom: 15px;
 }
