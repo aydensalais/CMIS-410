@@ -1,49 +1,59 @@
 @charset "utf-8";
-/*
-   sample start file for final project - educational use only
-   
-   Author:   Ayden
-   Date:     4-9-26
-   
-  
 
-*/
-
+/* ===== Reset ===== */
 * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* ===== Body ===== */
 body {
     font-size: 1.1em;
-    font-family: Roboto, Roboto, Roboto;
-	background-color: darkblue;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: darkblue;
+    color: #111;
 }
 
+/* ===== Wrapper ===== */
+#wrapper {
+    width: 930px;
+    margin: 20px auto;
+    border: 2px solid #444;
+    border-radius: 25px;
+    background-color: #f5f7fa; /* light neutral replaces tan */
+    overflow: hidden;
+}
+
+/* ===== Container ===== */
 #container {
     width: 930px;
-    border-width: 1px;
     margin: 0 auto;
-    background-color: tan;
+    background-color: #ffffff;
+    border-radius: 25px;
 }
 
-
+/* ===== Header ===== */
 header {
-    width: 910px;	/* reduced by 20px to accommodate shadow */
-    margin-bottom: 30px;
-    margin-top: 10px;
+    width: 910px;
+    margin: 10px auto 30px auto;
     text-align: center;
-    border: 1px solid #888888;
-    box-shadow: 15px 15px 5px 0 #888888;
-    border-radius: 25px;  	
+    border: 1px solid #888;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.25);
+    border-radius: 25px;
+    background-color: #ffffff;
+    padding: 15px;
 }
 
+/* ===== Navigation ===== */
 nav {
     width: 200px;
-    margin: 0 5px 0 5px; 
-    padding: 25px 10px 0 10px;
+    margin: 0 5px;
+    padding: 25px 10px;
     float: left;
     text-align: center;
+    background-color: #f5f7fa;
+    border-radius: 10px;
 }
 
 nav ul {
@@ -52,53 +62,57 @@ nav ul {
 }
 
 nav ul li a {
-    padding: 5px;
-    color: gray;
+    padding: 10px;
+    color: #333;
     text-decoration: none;
-    display:block;
+    display: block;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
     background: gray;
-    border-radius: 10px;
     color: white;
 }
 
+/* ===== Main Content ===== */
 #main {
     width: 446px;
-    padding: 10px;
+    padding: 15px;
     float: left;
     color: black;
-    border-left: 2px solid;
-    border-right: 2px solid;    
-    
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    background-color: #ffffff;
 }
 
 #main p {
     text-indent: 1.5em;
+    margin-bottom: 10px;
 }
 
-figure{
+/* ===== Figures ===== */
+figure {
     padding-top: 10px;
     text-align: center;
 }
 
 figcaption {
     font-style: italic;
-}
-
-aside {
-    width: 200px;
-    margin: 0 5px 0 5px;
-    padding: 10px;
-    float: right;
-}
-
-aside p {
-    font-style: roboto;
     font-size: 0.9em;
 }
 
+/* ===== Aside ===== */
+aside {
+    width: 200px;
+    margin: 0 5px;
+    padding: 10px;
+    float: right;
+    background-color: #f5f7fa;
+    border-radius: 10px;
+}
+
+/* ===== Headings ===== */
 h2 {
     font-size: 1.4em;
     text-align: center;
@@ -107,44 +121,59 @@ h2 {
 
 h3 {
     text-align: center;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
+    padding: 10px 0;
 }
 
+/* ===== Footer ===== */
 footer {
     width: 910px;
-    margin: 0;
-    padding: 10px;
+    margin: 0 auto;
+    padding: 15px;
     background-color: gray;
     clear: both;
     color: wheat;
     font-weight: bold;
     text-align: center;
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
-#wrapper {
-    width: 930px;
-    margin-bottom: 10px;
-    border: 2px solid;
-    border-radius: 25px;
-}/* navigation for footer */
+/* Footer links */
 footer a:link {
     color: white;
     text-decoration: none;
 }
 
 footer a:visited {
-    color: navy;
-    background-color: grey;
-    text-decoration: none;
+    color: #dcdcdc;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
 
+/* ===== Form ===== */
 .formRow {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    width: 100%;
+}
+
+#main,
+nav,
+aside {
+    vertical-align: top;
+}
+
+/* Center the right column content */
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    text-align: center;
 }
