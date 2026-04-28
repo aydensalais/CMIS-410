@@ -177,3 +177,11 @@ aside {
     justify-content: center; /* vertical centering */
     text-align: center;
 }
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* vertical centering */
+    align-items: center;       /* horizontal centering of content */
+    text-align: center;
+}
